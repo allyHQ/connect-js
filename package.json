@@ -1,16 +1,16 @@
 {
-  "name": "@ally/connect",
+  "name": "@ally.wtf/connect",
   "version": "1.0.0",
   "description": "Ally Connect Widget Library",
-  "main": "dist/@ally/connect-js.cjs.js",
-  "module": "dist/@ally/connect.esm.js",
-  "browser": "dist/@ally/connect.umd.js",
+  "main": "dist/@ally.wtf/connect-js.cjs.js",
+  "module": "dist/@ally.wtf/connect.esm.js",
+  "browser": "dist/@ally.wtf/connect.umd.js",
   "scripts": {
     "build": "rollup -c",
     "pretest": "npm run build"
   },
   "keywords": [
-    "ally",
+    "ally.wtf",
     "connect",
     "widget"
   ],

@@ -1,0 +1,39 @@
+{
+  "name": "@ally/connect",
+  "version": "1.0.0",
+  "description": "Ally Connect Widget Library",
+  "main": "dist/@ally/connect-js.cjs.js",
+  "module": "dist/@ally/connect.esm.js",
+  "browser": "dist/@ally/connect.umd.js",
+  "scripts": {
+    "build": "rollup -c",
+    "pretest": "npm run build"
+  },
+  "keywords": [
+    "ally",
+    "connect",
+    "widget"
+  ],
+  "author": "Ally (https://ally.wtf/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "rollup": "^2.79.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allyHQ/connect-js.git"
+  },
+  "homepage": "https://github.com/allyHQ/connect-js#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}

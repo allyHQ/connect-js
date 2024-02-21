@@ -87,5 +87,4 @@ var AllyConnect = /*#__PURE__*/function () {
   }]);
   return AllyConnect;
 }();
-
 module.exports = AllyConnect;

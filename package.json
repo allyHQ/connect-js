@@ -1,6 +1,6 @@
 {
   "name": "@ally.wtf/connect",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Ally Connect Widget Library",
   "main": "dist/@ally.wtf/connect-js.cjs.js",
   "module": "dist/@ally.wtf/connect.esm.js",

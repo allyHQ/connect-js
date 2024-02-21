@@ -62,4 +62,4 @@ class AllyConnect{
     }
 }
 
-export default AllyConnect;
+module.exports = AllyConnect;

@@ -91,7 +91,8 @@
     }]);
     return AllyConnect;
   }();
+  var src = AllyConnect;
 
-  return AllyConnect;
+  return src;
 
 }));

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Example</title>
+</head>
+<style>
+    .btn {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <button class="btn" onclick="javascript:openWidget()">Connect with ally</button>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@ally.wtf/connect@1.0.1/dist/@ally.wtf/connect.umd.js"></script>
+<script>
+    const AllyConnect = window['@ally']['wtf/connect'];
+    
+    function openWidget() {
+        let ally = new AllyConnect("APP_ID");
+
+        ally.on("connected", (data) => {
+            console.log(data)
+            let accounts = data.accounts;
+            for (let i = 0; i < accounts.length; i++) {
+                // create element
+                let div = document.createElement("div")
+                div.innerHTML = `
+                    <h3>Account Name: ${accounts[i].name}</h3>
+                    <p>Account Number: ${accounts[i].number}</p>
+                `
+                document.body.appendChild(div)
+            }
+        });
+
+        ally.openWidget();
+    }
+</script>
+</html>
